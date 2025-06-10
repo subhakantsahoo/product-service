@@ -1,0 +1,36 @@
+{
+  "name": "product-order-service",
+  "version": "1.0.0",
+  "description": "Product and Order Management Microservice",
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "nest start",
+    "start:dev": "nest start --watch",
+    "build": "nest build",
+    "migration:generate": "ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js migration:generate -n",
+    "migration:run": "ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js migration:run"
+  },
+  "dependencies": {
+    "@nestjs/common": "^9.4.3",
+    "@nestjs/config": "^4.0.2",
+    "@nestjs/core": "^9.4.3",
+    "@nestjs/platform-express": "^9.0.0",
+    "@nestjs/typeorm": "^9.0.1",
+    "@prisma/client": "^6.9.0",
+    "amqplib": "^0.10.8",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.13.2",
+    "pg": "^8.16.0",
+    "prisma": "^6.9.0",
+    "reflect-metadata": "^0.1.14",
+    "rxjs": "^7.8.2",
+    "typeorm": "^0.3.24"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^9.0.0",
+    "@nestjs/schematics": "^9.0.0",
+    "@nestjs/testing": "^9.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
+  }
+}
